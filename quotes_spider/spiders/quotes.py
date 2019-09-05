@@ -8,4 +8,4 @@ class QuotesSpider(scrapy.Spider):
     start_urls = ['http://quotes.toscrape.com/']
 
     def parse(self, response):
-        pass
+        quotes = response.xpath('//*[@class="quote"]')
