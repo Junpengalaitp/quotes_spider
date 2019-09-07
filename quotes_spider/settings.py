@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'quotes_spider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'quotes_spider (+http://www.yourdomain.com)'
+# USER_AGENT = 'quotes_spider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -64,9 +64,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'quotes_spider.pipelines.QuotesSpiderPipeline': 300,
-#}
+ITEM_PIPELINES = {
+   'quotes_spider.pipelines.QuotesSpiderPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
